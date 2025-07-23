@@ -14,7 +14,7 @@ namespace CollectionsMasterConsoleUI
 
             #region Arrays
             //TODO: Create an integer Array of size 50
-            var numbers = new int[5];
+            var numbers = new int[50];
             
 
             //TODO: Create a method to populate the number array with 50 random numbers that are between 0 and 50
