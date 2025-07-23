@@ -14,7 +14,7 @@ namespace CollectionsMasterConsoleUI
 
             #region Arrays
             //TODO: Create an integer Array of size 50
-            var numbers = new int[50];
+            var numbers = new int[5];
             
 
             //TODO: Create a method to populate the number array with 50 random numbers that are between 0 and 50
@@ -39,10 +39,13 @@ namespace CollectionsMasterConsoleUI
             */
             
             Array.Reverse(numbers);
+            NumberPrinter(numbers);
 
             Console.WriteLine("All Numbers Reversed:");
 
             Console.WriteLine("---------REVERSE CUSTOM------------");
+            ReverseArray(numbers);
+            
 
             Console.WriteLine("-------------------");
 
@@ -187,6 +190,8 @@ namespace CollectionsMasterConsoleUI
         }        
 
         private static void ReverseArray(int[] array)
+        
+        
         {
             int start = 0;
             int end = array.Length - 1;
@@ -201,8 +206,11 @@ namespace CollectionsMasterConsoleUI
                 //Move the values from the indexes towards each other
                 start++;
                 end--;
+                
+                
             }
 
+            NumberPrinter(array);
         }
 
         /// <summary>
